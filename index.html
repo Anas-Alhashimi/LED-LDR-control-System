@@ -23,14 +23,23 @@
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
         </div>
         
-        <h2>Technical Details</h2>
+        <h2>Part 1: Learning the Model</h2>
+        <p>In this phase, we first implement a generic Arduino code for data acquisition. Then, we use a MATLAB script to record input/output data, analyze the system response, and estimate the model order and parameters.</p>
+        
+        <h2>Part 2: Building the Controller</h2>
+        <p>Using the best-estimated model, we design and implement a PID controller to maintain the light intensity at a fixed level.</p>
+        
+        <h2>Single LED / Single LDR System</h2>
         <ul>
             <li><strong>Microcontroller:</strong> Arduino / ESP32</li>
-            <li><strong>Sensors:</strong> LDR (Light Sensor), Motion Sensor</li>
-            <li><strong>Control Algorithm:</strong> PWM-based Brightness Adjustment</li>
-            <li><strong>Programming Language:</strong> C++ (Arduino IDE / PlatformIO)</li>
-            <li><strong>Communication:</strong> Bluetooth / Wi-Fi (Optional)</li>
+            <li><strong>Sensor:</strong> LDR (Light Dependent Resistor)</li>
+            <li><strong>Control Algorithm:</strong> Model-based PID Controller</li>
+            <li><strong>Programming Language:</strong> C++ (Arduino IDE) & MATLAB</li>
+            <li><strong>Data Processing:</strong> MATLAB for system identification</li>
         </ul>
+        
+        <h2>Extending to 2 LEDs / 2 LDRs System</h2>
+        <p>After verifying the control performance for a single LED-LDR system, the same methodology is applied to a system with two LEDs and two LDRs, allowing for more complex control and lighting optimization.</p>
         
         <h2>Challenges & Solutions</h2>
         <p>One major challenge was ensuring smooth dimming transitions. This was resolved using PWM control with adaptive filtering to reduce flickering.</p>
@@ -39,7 +48,7 @@
         <a href="https://github.com/yourusername/led-control-system" class="btn" target="_blank">View on GitHub</a>
         
         <h2>Contact & Social Links</h2>
-        <p>check out my <a href="https://yourportfolio.com" target="_blank">Portfolio</a>.</p>
+        <p>Connect with me on <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> or check out my <a href="https://yourportfolio.com" target="_blank">Portfolio</a>.</p>
     </div>
 </body>
 </html>
